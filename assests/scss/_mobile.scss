@@ -1,0 +1,146 @@
+
+@media (max-width:680px) {
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .container {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+    
+    .nav_menu {
+        position: fixed;
+        background-color: $white-color;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 5.5rem 0 3rem;
+        transition: .4s;
+        text-align: left;
+        z-index: 1000;
+        height: 100%;
+
+        .nav_items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 1rem;
+        }
+        .nav_link {
+            font-size: 1.5rem;
+        }
+    }
+
+    .nav .container .hamburger {
+        display: block;
+        margin-right: 5rem;
+    }
+
+    .hero .hero_content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+
+        .header_img {
+            margin-top: 1rem;
+            width: 300px;
+            position: absolute;
+            top: -0rem;
+            left: 0;
+        }
+
+        .hero_detail {
+            margin-top: 25rem;
+
+            .hero_text {
+                text-align: center;
+            }
+            .hero_subtitle {
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+    }
+
+    .hero .frame {
+        width: 250px;
+    }
+
+    .service {
+        padding-top: 6rem;
+
+        .service_title {
+            text-align: center;
+            font-size: 3rem;
+        }
+        
+        .service_container {
+            gap: 2rem;
+
+            h3 {
+                font-size: 2rem;
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
+        }
+    }
+
+    .users {
+        padding: 4rem 0;
+    }
+
+    .apps {
+        padding: 4rem 0;
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .security {
+        margin: 10rem 0;
+
+        h1 {
+            text-align: center;
+        }
+
+        h4 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+    }
+
+    .help {
+        padding: 5rem 0;
+
+        .help_details {
+            text-align: center;
+
+            h2 {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    .footer .footer_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer_inner {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
